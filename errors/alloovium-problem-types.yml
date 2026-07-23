@@ -1,0 +1,50 @@
+generated: '2026-07-17'
+method: searched
+source: https://www.alloovium.com/en/developers/errors
+format: rfc9457
+media_type: application/problem+json
+envelope:
+  standard: RFC 7807 / RFC 9457 problem details
+  fields:
+  - {name: type, description: URI identifying the error category}
+  - {name: title, description: Human-readable summary}
+  - {name: status, description: HTTP status code}
+  - {name: detail, description: Longer description with specifics}
+  - {name: instance, description: Request path (optional)}
+  - {name: code, description: Stable machine-readable identifier (branch on this — stability contract)}
+  - {name: request_id, description: Included on 5xx errors}
+problems:
+- status: 401
+  codes: [missing_api_key, invalid_api_key, invalid_token, api_key_revoked, api_key_expired, user_inactive, tenant_disabled]
+  title: Authentication error
+- status: 402
+  codes: [payment_required]
+  title: Billing / payment required
+- status: 403
+  codes: [insufficient_scope, permission_denied, oauth_not_supported]
+  title: Authorization error
+- status: 404
+  codes: [not_found]
+  title: Resource not found
+- status: 409
+  codes: [idempotency_key_reused, idempotency_in_progress]
+  title: Conflict
+- status: 413
+  codes: [file_too_large]
+  title: Upload too large
+- status: 400
+  codes: [unsupported_file_type, invalid_document_id]
+  title: Bad upload request
+- status: 422
+  codes: [validation_error, invalid_cursor, invalid_idempotency_key]
+  title: Validation error
+- status: 429
+  codes: [rate_limited]
+  title: Rate limit exceeded
+  type: https://api.alloovium.com/errors/rate_limited
+- status: 500
+  codes: [internal_error]
+  title: Internal server error
+- status: 501
+  codes: [not_implemented]
+  title: Not implemented

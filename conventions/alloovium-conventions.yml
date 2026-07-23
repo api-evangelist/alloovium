@@ -1,0 +1,57 @@
+generated: '2026-07-17'
+method: searched
+source: https://www.alloovium.com/en/developers
+docs:
+  authentication: https://www.alloovium.com/en/developers/authentication
+  idempotency: https://www.alloovium.com/en/developers/idempotency
+  pagination: https://www.alloovium.com/en/developers/pagination
+  rate_limits: https://www.alloovium.com/en/developers/rate-limits
+  errors: https://www.alloovium.com/en/developers/errors
+authentication:
+  style: API key (Bearer ak_live_/ak_test_) or OAuth 2.1 authorization code + PKCE
+  see: authentication/alloovium-authentication.yml
+idempotency:
+  supported: true
+  header: Idempotency-Key
+  methods: [POST, PATCH, PUT, DELETE]
+  safe_methods_excluded: [GET, HEAD, OPTIONS]
+  key_pattern: 1 to 255 characters
+  retention: 24 hours from first write
+  scope: Per-API-key namespace; no cross-credential visibility.
+  replay_header: 'Idempotent-Replayed: true'
+  cached_responses: Only 2xx are cached; 4xx and 5xx bypass the cache.
+  conflicts:
+  - status: 422
+    code: invalid_idempotency_key
+    when: Same Idempotency-Key reused with a different request body.
+  - status: 409
+    code: idempotency_in_progress
+    when: A request with this Idempotency-Key is still in progress; Retry-After header returned.
+pagination:
+  style: cursor (keyset, opaque base64)
+  params:
+    limit: {default: 25, max: 100, note: clamped server-side}
+    cursor: {default: none, max_bytes: 1024, note: opaque payload for next page}
+  response_fields: [data, next_cursor, has_more]
+  guidance: Branch on has_more (or next_cursor != null), never on an empty data array.
+  paginated_endpoints:
+  - GET /api/v2/vault/projects
+  - GET /api/v2/vault/documents
+  - GET /api/v2/conversations
+  - GET /api/v2/workflows
+versioning:
+  scheme: uri-path
+  current: v2
+  base_url: https://api.alloovium.com/api/v2
+request_tracing:
+  request_id: Returned in the error body on 5xx responses (request_id field).
+error_envelope:
+  format: rfc9457
+  media_type: application/problem+json
+  fields: [type, title, status, detail, instance, code, request_id]
+  stable_field: code (covered by the stability contract — branch on this)
+  see: errors/alloovium-problem-types.yml
+rate_limiting:
+  model: token-bucket, tier-based
+  headers: [X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-RateLimit-Cost, Retry-After]
+  see: rate-limits/alloovium-rate-limits.yml

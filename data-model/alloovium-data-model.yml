@@ -1,0 +1,45 @@
+generated: '2026-07-17'
+method: derived
+source: 'https://www.alloovium.com/en/developers (capability docs: vault, chat, workflows, templates)'
+note: >-
+  Derived from documented REST/MCP operations and response objects. No OpenAPI file was captured (the API
+  host api.alloovium.com did not resolve from the enrichment environment), so entity fields are taken from
+  the published capability docs rather than a schema.
+entities:
+- name: Project
+  capability: vault
+  key_fields: [id, name, project_type, created_at]
+  operations: ['GET /api/v2/vault/projects', 'POST /api/v2/vault/projects', 'GET /api/v2/vault/projects/{id}']
+- name: Document
+  capability: vault
+  key_fields: [id, project_id, folder_id, name, document_type]
+  operations: ['GET /api/v2/vault/documents', 'GET /api/v2/vault/documents/{id}', 'POST upload (REST-only)']
+- name: Conversation
+  capability: chat
+  key_fields: [id, title, created_at, updated_at, message_count]
+  operations: ['GET /api/v2/conversations', 'GET /api/v2/conversations/{conversation_id}']
+- name: Message
+  capability: chat
+  key_fields: [id, role, content, created_at, citations]
+- name: Citation
+  capability: chat
+  key_fields: [document_id, chunk_id, page_number, content, score]
+- name: Workflow
+  capability: workflows
+  key_fields: [id]
+  operations: ['GET /api/v2/workflows']
+- name: WorkflowRun
+  capability: workflows
+  key_fields: [run_id, status]
+  operations: ['POST run (returns run_id)', 'GET run status']
+- name: TemplateFillJob
+  capability: templates
+  key_fields: [id, status]
+  operations: ['POST fill (REST-only)', 'GET fill status']
+relationships:
+- {from: Document, to: Project, kind: belongs_to, via: project_id}
+- {from: Message, to: Conversation, kind: belongs_to, via: conversation_id}
+- {from: Message, to: Citation, kind: has_many, via: citations}
+- {from: Citation, to: Document, kind: belongs_to, via: document_id}
+- {from: Conversation, to: Message, kind: has_many, via: messages}
+- {from: WorkflowRun, to: Workflow, kind: belongs_to, via: workflow_id}

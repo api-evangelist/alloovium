@@ -1,0 +1,21 @@
+generated: '2026-07-17'
+method: searched
+source: https://www.alloovium.com/en/developers/authentication
+test_vs_live:
+  model: Separate test and live API keys distinguished by key prefix.
+  key_prefixes:
+    test: ak_test_
+    live: ak_live_
+  key_length: 60
+  provisioning: Create test and live keys in the Developer Console.
+staging:
+  available: true
+  note: >-
+    A separate staging environment is available for pre-production validation; staging server details are
+    exposed via the live OpenAPI servers block / staging credentials (per the API reference page). No fixed
+    staging URL is published in the public docs.
+magic_test_values: []
+notes: >-
+  Alloovium is document-intelligence, not payments — there are no test cards or decline values. The sandbox
+  surface is the test-key (ak_test_) environment plus the staging environment. No fixture/trigger tooling
+  or test clocks are documented. No test values are invented here.

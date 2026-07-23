@@ -1,0 +1,17 @@
+generated: '2026-07-17'
+method: searched
+source: https://www.alloovium.com/en/docs/guides/add-ins
+families:
+- family: Microsoft 365 Add-ins
+  surface: Office task pane (embedded UI inside Microsoft Word and Excel)
+  distribution: Push to a team via the M365 admin centre, or sideload on a single machine.
+  components:
+  - name: Word add-in
+    docs: https://www.alloovium.com/en/docs/guides/add-ins/word
+    description: Ask questions about the open document, accept structured edits, and run workflows like Document Fill inside a Word task pane.
+  - name: Excel add-in
+    docs: https://www.alloovium.com/en/docs/guides/add-ins/excel
+    description: Build obligation and variation registers, fill templates, and apply auditable chat-driven edits inside Excel with citations back to source clauses.
+notes: >-
+  These are first-party embedded/hosted UI surfaces (Office task panes), distinct from server-side SDKs.
+  No standalone web-component / JS element library is published beyond the M365 add-ins.

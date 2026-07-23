@@ -1,7 +1,26 @@
 aid: alloovium
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/alloovium.png
 name: Alloovium
-description: Alloovium is a company surfaced as a portfolio company of y-combinator and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Alloovium is an AI-native document intelligence and compliance platform for the construction
+  industry. It reads construction project documents (contracts, specifications, drawings, submittals, RFIs,
+  and emails), answers questions with page-level citations, extracts and cross-references data, tracks
+  obligations and deadlines, and drafts variations, RFIs, reports, and compliance evidence behind a human
+  review gate. Alloovium exposes a public REST API v2 and a hosted Model Context Protocol (MCP) server so
+  agents and integrations can query the vault, run chat, execute workflows, and fill templates. Founded by
+  Zander Schweitzer and Cielo Nicolosi, Alloovium is a Y Combinator Summer 2026 company based in Brisbane,
+  Australia.
 url: https://raw.githubusercontent.com/api-evangelist/alloovium/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,9 +33,121 @@ created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
-apis: []
+- Construction
+- Document Intelligence
+- Compliance
+- Artificial Intelligence
+- Construction Technology
+- Documents
+- MCP
+apis:
+- aid: alloovium:alloovium-api
+  name: Alloovium API
+  humanURL: https://www.alloovium.com/en/developers
+  baseURL: https://api.alloovium.com/api/v2
+  tags:
+  - Document Intelligence
+  - Construction
+  - AI
+  description: Alloovium's public REST API v2 for document intelligence over construction projects — vault
+    (projects, documents, hybrid search), chat (grounded, cited answers), workflows (automation runs), and
+    template filling. Authenticated with API keys (ak_live_/ak_test_) or OAuth 2.1 (authorization code +
+    PKCE, dynamic client registration, scopes). RFC 7807/9457 problem+json errors, Idempotency-Key on
+    writes, cursor pagination, and token-bucket rate limiting with X-RateLimit-* headers.
+  properties:
+  - url: https://www.alloovium.com/en/developers
+    type: DeveloperPortal
+  - url: https://www.alloovium.com/en/developers/quickstart
+    type: GettingStarted
+  - url: https://www.alloovium.com/en/developers/api-reference
+    type: APIReference
+  - url: https://api.alloovium.com/api/v2/openapi.json
+    type: OpenAPI
+  - url: https://www.alloovium.com/en/developers
+    type: Documentation
+  - url: authentication/alloovium-authentication.yml
+    type: Authentication
+  - url: scopes/alloovium-scopes.yml
+    type: OAuthScopes
+  - url: rate-limits/alloovium-rate-limits.yml
+    type: RateLimits
+  - url: errors/alloovium-problem-types.yml
+    type: ErrorCatalog
+  - url: conventions/alloovium-conventions.yml
+    type: Conventions
+  - url: conventions/alloovium-conventions.yml
+    type: Idempotency
+  - url: data-model/alloovium-data-model.yml
+    type: DataModel
+  - url: sandbox/alloovium-sandbox.yml
+    type: Sandbox
+  - url: conformance/alloovium-conformance.yml
+    type: Conformance
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: DeveloperPortal
+  url: https://www.alloovium.com/en/developers
+- type: Documentation
+  url: https://www.alloovium.com/en/docs
+- type: APIReference
+  url: https://www.alloovium.com/en/developers/api-reference
+- type: GettingStarted
+  url: https://www.alloovium.com/en/developers/quickstart
+- type: ChangeLog
+  url: changelog/alloovium-changelog.yml
+- type: Lifecycle
+  url: lifecycle/alloovium-lifecycle.yml
+- type: Pricing
+  url: https://www.alloovium.com/en/pricing
+- type: TermsOfService
+  url: https://www.alloovium.com/en/docs/legal/terms
+- type: PrivacyPolicy
+  url: https://www.alloovium.com/en/docs/legal/privacy
+- type: Support
+  url: https://www.alloovium.com/en/contact
+- type: Security
+  url: https://www.alloovium.com/en/security
+- type: TrustCenter
+  url: security/alloovium-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/alloovium-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/alloovium-domain-security.yml
+- type: Authentication
+  url: authentication/alloovium-authentication.yml
+- type: OAuthScopes
+  url: scopes/alloovium-scopes.yml
+- type: Conventions
+  url: conventions/alloovium-conventions.yml
+- type: Idempotency
+  url: conventions/alloovium-conventions.yml
+- type: RateLimits
+  url: rate-limits/alloovium-rate-limits.yml
+- type: ErrorCatalog
+  url: errors/alloovium-problem-types.yml
+- type: Conformance
+  url: conformance/alloovium-conformance.yml
+- type: DataModel
+  url: data-model/alloovium-data-model.yml
+- type: Sandbox
+  url: sandbox/alloovium-sandbox.yml
+- type: Components
+  url: components/alloovium-components.yml
+- type: LLMsTxt
+  url: llms/alloovium-llms.txt
+- type: MCPServer
+  url: mcp/alloovium-mcp.yml
+  name: Alloovium MCP Server
+  description: Hosted Streamable-HTTP MCP server at https://api.alloovium.com/api/v1/mcp/ exposing 15 tools
+    over the vault, chat, workflows, and templates; authenticated with an Alloovium API key (Bearer ak_live_).
+- type: AgentSkill
+  url: skills/_index.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

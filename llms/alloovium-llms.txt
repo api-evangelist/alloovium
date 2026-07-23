@@ -1,0 +1,175 @@
+# Alloovium
+
+> AI-native document intelligence and compliance for the construction industry. Alloovium answers questions across construction project documents (contracts, specs, drawings, submittals) with citations, extracts and structures data, cross-references documents, and tracks obligations and deadlines.
+
+## Core pages
+- [Product](https://www.alloovium.com/en/product): What Alloovium does for construction teams
+- [Pricing](https://www.alloovium.com/en/pricing): Plans and pricing
+- [Security](https://www.alloovium.com/en/security): How project data is kept secure
+- [Contact](https://www.alloovium.com/en/contact): Book a demo
+
+## Documentation
+Product docs index: https://www.alloovium.com/en/docs — each page below also exists as HTML without the .md suffix. Single-file snapshot of all docs: https://www.alloovium.com/llms-full.txt
+- [Documentation](https://www.alloovium.com/en/docs.md)
+- [Changelog](https://www.alloovium.com/en/docs/changelog.md): Release history for Alloovium, grounded in shipped changes.
+- [Add-ins for Microsoft 365 — Overview](https://www.alloovium.com/en/docs/guides/add-ins.md): Alloovium inside Word and Excel. Document chat and register building — without leaving Microsoft 365.
+- [Excel add-in](https://www.alloovium.com/en/docs/guides/add-ins/excel.md): Build obligation and variation registers, fill templates, and apply auditable chat-driven edits — directly inside Excel with citations back to source clauses.
+- [Install & deploy the add-ins](https://www.alloovium.com/en/docs/guides/add-ins/install.md): Push the Word and Excel add-ins to your team via the M365 admin centre, or sideload them on a single machine to try.
+- [Word add-in](https://www.alloovium.com/en/docs/guides/add-ins/word.md): Ask questions about the open document, accept structured edits, and run workflows like Document Fill — all inside a Microsoft Word task pane.
+- [Admin & Teams Setup](https://www.alloovium.com/en/docs/guides/admin.md): Set up your organization in Alloovium: invite people, assign roles, build teams, and configure single sign-on.
+- [AI Assistant](https://www.alloovium.com/en/docs/guides/ai-assistant.md): Learn how to use the Alloovium AI Assistant to ask questions about your documents and get cited answers.
+- [Asking Questions](https://www.alloovium.com/en/docs/guides/ai-assistant/asking-questions.md): Learn how to ask questions in the Alloovium AI Assistant and get cited answers.
+- [Citations](https://www.alloovium.com/en/docs/guides/ai-assistant/citations.md): Understand how Alloovium AI Assistant citations work and how to navigate to source passages.
+- [Sharing Conversations](https://www.alloovium.com/en/docs/guides/ai-assistant/sharing.md): Share AI Assistant conversations with team members in Alloovium.
+- [Voice Input](https://www.alloovium.com/en/docs/guides/ai-assistant/voice-input.md): Use voice dictation to ask questions in the Alloovium AI Assistant.
+- [Claim Evidence](https://www.alloovium.com/en/docs/guides/claims-evidence.md): Build a claim evidence pack from cited answers over the project record, then draft the formal claim.
+- [Collaboration](https://www.alloovium.com/en/docs/guides/collaboration.md): Work with your team on shared projects with fine-grained permissions in Alloovium.
+- [Permissions & Roles](https://www.alloovium.com/en/docs/guides/collaboration/permissions.md): Understand roles and permissions for project members in Alloovium.
+- [Sharing](https://www.alloovium.com/en/docs/guides/collaboration/sharing.md): Share conversations, workflow results, and documents with team members in Alloovium.
+- [Compliance](https://www.alloovium.com/en/docs/guides/compliance.md): Compliance in Alloovium is a risk lens over your project documents — credential expiry, unsigned records and gap findings surfaced where you already work.
+- [Audit pack & evidence](https://www.alloovium.com/en/docs/guides/compliance/audit-pack.md): Assemble a point-in-time evidence dossier for an auditor — choose the documents that map to each clause, freeze them, and share a read-only pack.
+- [Conformance & attention](https://www.alloovium.com/en/docs/guides/compliance/conformance.md): How Alloovium computes conformance gaps between what a project promises and what its documents prove, routes each gap to the right person, and war-games what could go wrong.
+- [Document Generation](https://www.alloovium.com/en/docs/guides/document-generation.md): Draft variations, RFIs, reports and site instructions from project context in Alloovium.
+- [Email Queries](https://www.alloovium.com/en/docs/guides/email-queries.md): Ask questions across your project email the same way you ask them across your documents — cited answers drawn from synced Outlook and Gmail threads and their attachments.
+- [Exchange — Overview](https://www.alloovium.com/en/docs/guides/exchange.md): Version control and a defensible audit trail for construction documents.
+- [Clause-level diffs](https://www.alloovium.com/en/docs/guides/exchange/clause-diffs.md): See exactly what changed between two DOCX revisions, clause by clause.
+- [Trade markups, merged](https://www.alloovium.com/en/docs/guides/exchange/markups-merge.md): Every sub's redlines roll back onto the head contractor's spec. Conflicts flagged before site.
+- [Getting Started](https://www.alloovium.com/en/docs/guides/getting-started.md): Learn how to set up your Alloovium workspace and get started with document intelligence.
+- [Key Features](https://www.alloovium.com/en/docs/guides/getting-started/features.md): Explore the core features of Alloovium: AI Assistant, Document Hub, Template Filling, and Document Generation.
+- [Setting Up Your Workspace](https://www.alloovium.com/en/docs/guides/getting-started/workspace.md): Create your first project, upload documents, and invite your team to Alloovium.
+- [Integrations](https://www.alloovium.com/en/docs/guides/integrations.md): Connect Alloovium to SharePoint, Google Drive, Procore, and 15+ other tools.
+- [Oracle Aconex](https://www.alloovium.com/en/docs/guides/integrations/aconex.md): Connect Oracle Aconex to sync project documents, drawings, and transmittals into Alloovium.
+- [Asite Adoddle](https://www.alloovium.com/en/docs/guides/integrations/asite.md): Connect Asite Adoddle to sync project documents, drawings, and forms into Alloovium using your Asite login.
+- [Autodesk Forma (ACC / BIM 360)](https://www.alloovium.com/en/docs/guides/integrations/autodesk.md): Connect Autodesk Forma (formerly Autodesk Construction Cloud) to sync drawings and documents from your projects into Alloovium.
+- [Autodesk APS — Bring Your Own App](https://www.alloovium.com/en/docs/guides/integrations/autodesk/byo-app.md): Create your own APS application and install it in your ACC Hub as a Custom Integration — no App Store approval required.
+- [Bluebeam Studio](https://www.alloovium.com/en/docs/guides/integrations/bluebeam.md): Connect Bluebeam Studio Prime to sync markup sessions and documents into Alloovium.
+- [Bluebeam Studio — Private Integration](https://www.alloovium.com/en/docs/guides/integrations/bluebeam/private-app.md): Register a private Bluebeam integration and connect it to Alloovium. Faster than the public production approval path.
+- [Box](https://www.alloovium.com/en/docs/guides/integrations/box.md): Connect Box to sync folders and files into Alloovium using OAuth 2.0.
+- [Confluence](https://www.alloovium.com/en/docs/guides/integrations/confluence.md): Connect Atlassian Confluence to bring spaces and pages into Alloovium using OAuth 2.0.
+- [DocuSign](https://www.alloovium.com/en/docs/guides/integrations/docusign.md): Connect DocuSign to import signed envelopes and documents into Alloovium for AI-powered review.
+- [Dropbox](https://www.alloovium.com/en/docs/guides/integrations/dropbox.md): Connect Dropbox to sync folders and files into Alloovium using OAuth 2.0.
+- [Trimble e-Builder](https://www.alloovium.com/en/docs/guides/integrations/ebuilder.md): Connect Trimble e-Builder to sync project documents, processes, and reports into Alloovium.
+- [Fieldwire](https://www.alloovium.com/en/docs/guides/integrations/fieldwire.md): Connect Fieldwire using an API key to sync plans, tasks, and reports into Alloovium.
+- [Fieldwire — Generate an API Key](https://www.alloovium.com/en/docs/guides/integrations/fieldwire/api-key.md): Generate a Fieldwire API token from your account settings and connect it to Alloovium in minutes.
+- [Gmail](https://www.alloovium.com/en/docs/guides/integrations/gmail.md): Connect Gmail to bring project-related emails and attachments into Alloovium for AI-powered search.
+- [Google Calendar](https://www.alloovium.com/en/docs/guides/integrations/google-calendar.md): Connect Google Calendar to sync project meeting notes and events into Alloovium.
+- [Google Drive Integration](https://www.alloovium.com/en/docs/guides/integrations/google-drive.md): Connect Google Drive to sync files, Docs, Sheets, and Slides from your drives into Alloovium automatically.
+- [MCP Server](https://www.alloovium.com/en/docs/guides/integrations/mcp.md): Use the Alloovium MCP server to access your projects from Claude Desktop, Cursor, and other AI tools.
+- [Microsoft Teams](https://www.alloovium.com/en/docs/guides/integrations/microsoft-teams.md): Connect Microsoft Teams to sync channel messages and meeting recordings into Alloovium.
+- [Newforma Konekt](https://www.alloovium.com/en/docs/guides/integrations/newforma.md): Connect Newforma Konekt to bring project correspondence, RFIs, and submittals into Alloovium.
+- [Microsoft OneDrive](https://www.alloovium.com/en/docs/guides/integrations/one-drive.md): Connect OneDrive to sync personal and shared drives into Alloovium via Microsoft OAuth.
+- [Microsoft Outlook](https://www.alloovium.com/en/docs/guides/integrations/outlook.md): Connect Outlook to sync project emails and meeting notes into Alloovium via Microsoft OAuth.
+- [Procore Integration](https://www.alloovium.com/en/docs/guides/integrations/procore.md): Connect your own Procore Data Connection app to Alloovium and import drawings, specifications, submittals, and RFIs.
+- [Procore — Bring Your Own App](https://www.alloovium.com/en/docs/guides/integrations/procore/byo-app.md): Create your own Procore Data Connection app and connect it to Alloovium without waiting for Marketplace approval.
+- [Bentley ProjectWise](https://www.alloovium.com/en/docs/guides/integrations/projectwise.md): Connect Bentley ProjectWise via the iTwin Platform to sync engineering documents into Alloovium.
+- [Bentley ProjectWise — Bring Your Own App](https://www.alloovium.com/en/docs/guides/integrations/projectwise/byo-app.md): Register a free iTwin application and connect it to Alloovium. Instant self-service — no partner approval required.
+- [SharePoint Integration](https://www.alloovium.com/en/docs/guides/integrations/sharepoint.md): Sync documents from SharePoint into Alloovium automatically.
+- [Trimble Connect](https://www.alloovium.com/en/docs/guides/integrations/trimble-connect.md): Connect Trimble Connect to sync project files and BIM models into Alloovium using your own Trimble developer app.
+- [Lessons](https://www.alloovium.com/en/docs/guides/lessons.md): Lessons are your company’s memory — the things a job taught you, captured once and resurfaced automatically when a new document or decision walks into the same trap.
+- [Lookahead](https://www.alloovium.com/en/docs/guides/lookahead.md): Lookahead is Alloovium’s near-term schedule view. It surfaces schedule risk early so there are no surprises, built from the documents and updates your routines already process.
+- [Meetings](https://www.alloovium.com/en/docs/guides/meetings.md): Capture a meeting, get an automatic transcript and summary, and review the action items, decisions and other items it surfaces before they flow into your day.
+- [Monthly Report](https://www.alloovium.com/en/docs/guides/monthly-report.md): The monthly report drafts itself from the month’s records — progress, program, variations, risks and photos assembled into your template, every claim cited, ready for your review.
+- [Company Workspace](https://www.alloovium.com/en/docs/guides/organization.md): The Organization workspace is your company level: the shared library, contacts, playbook, lessons, people, and data quality — everything that outlives any single project.
+- [Portal — Document Loop](https://www.alloovium.com/en/docs/guides/portal.md): Portal is the inbound and outbound document loop with subcontractors and trades: submissions, transmittals, RFIs, and a status overview.
+- [Document Hub](https://www.alloovium.com/en/docs/guides/projects.md): Upload, organise, and manage your documents in the Alloovium Document Hub.
+- [Document Types](https://www.alloovium.com/en/docs/guides/projects/document-types.md): Learn how Alloovium classifies documents and how to assign custom types.
+- [Drawing Intelligence](https://www.alloovium.com/en/docs/guides/projects/drawing-intelligence.md): How Alloovium automatically extracts drawing metadata, tracks revisions, and indexes construction drawings for AI search.
+- [Managing Projects](https://www.alloovium.com/en/docs/guides/projects/projects.md): Organise your documents into projects and folders in Alloovium.
+- [Uploading Documents](https://www.alloovium.com/en/docs/guides/projects/uploading.md): Learn how to upload documents to the Alloovium Document Hub.
+- [Reports & Document Generation](https://www.alloovium.com/en/docs/guides/reports.md): Generate long-form reports and documents from your project — monthly reports, infrastructure reports, tender reviews and management plans — grounded in your own documents.
+- [Routines](https://www.alloovium.com/en/docs/guides/routines.md): Routines are Alloovium automations built from blocks — a trigger starts an ordered chain that talks to people, reads your inbox and documents, produces a draft, and hands it back behind a human review gate.
+- [Settings](https://www.alloovium.com/en/docs/guides/settings.md): Configure your Alloovium account, notifications, and security settings.
+- [Notifications](https://www.alloovium.com/en/docs/guides/settings/notifications.md): Configure notification settings for document processing, queries, and shared content in Alloovium.
+- [Security](https://www.alloovium.com/en/docs/guides/settings/security.md): Configure MFA, SSO, and session management for your Alloovium account.
+- [Site Calls & SMS](https://www.alloovium.com/en/docs/guides/site-calls.md): Alloovium can call you — a scheduled site-walk or knock-off call captures the day in a two-minute conversation, writes the diary, and flags what needs paperwork. Action items arrive back by text.
+- [Template Filling](https://www.alloovium.com/en/docs/guides/template-filling.md): Fill DOCX templates from project documents in Alloovium.
+- [Today](https://www.alloovium.com/en/docs/guides/today.md): Today is the daily-driver dashboard in Alloovium — a calendar spine, a Needs you queue, and a cross-source activity feed that shows what changed since yesterday.
+- [Variations](https://www.alloovium.com/en/docs/guides/variations.md): Capture a potential variation, draft it into a claim, and track it from draft through submitted to approved — with the cost and time impact recorded against your contract.
+- [Open-Source Acknowledgements](https://www.alloovium.com/en/docs/legal/acknowledgements.md): Open-source software that powers parts of the Alloovium platform, including required license attributions.
+- [Data Handling Commitments](https://www.alloovium.com/en/docs/legal/data-handling.md): How Alloovium accesses, stores, and protects your documents when you connect an integration.
+- [Privacy Policy](https://www.alloovium.com/en/docs/legal/privacy.md): How Alloovium collects, uses, and protects your personal information.
+- [Terms of Service](https://www.alloovium.com/en/docs/legal/terms.md): Terms governing access to and use of the Alloovium platform.
+- [Use Cases](https://www.alloovium.com/en/docs/use-cases.md): Real-world scenarios showing how construction professionals use Alloovium for contract review, payment claims, project onboarding, dispute support, and handover.
+
+## Construction Answers (topic hubs)
+Plain-English answers to questions construction professionals in the US and Australia ask. Index: https://www.alloovium.com/en/answers
+- [WHS & Safety Compliance](https://www.alloovium.com/en/answers/topic/whs-safety): Work health and safety documents, obligations and record-keeping for Australian construction sites.
+- [Mechanics Liens & Payment (US)](https://www.alloovium.com/en/answers/topic/us-liens-payment): Lien deadlines, preliminary notices, retainage, lien waivers, pay applications and prompt payment by state.
+- [Document Control](https://www.alloovium.com/en/answers/topic/document-control): Drawing revisions, transmittals, registers and finding information across project documents.
+- [AI Document Intelligence](https://www.alloovium.com/en/answers/topic/ai-document-intelligence): How AI reads, extracts, cross-references and answers questions across construction documents.
+- [Role Workflows (US)](https://www.alloovium.com/en/answers/topic/us-role-workflows): How PMs, superintendents, project engineers and safety managers automate document tracking.
+- [Document Templates (US)](https://www.alloovium.com/en/answers/topic/us-doc-templates): Change order, lien waiver, JHA, daily report and schedule of values templates for US projects.
+- [OSHA & Safety (US)](https://www.alloovium.com/en/answers/topic/us-osha-safety): JHAs, OSHA 300 logs, toolbox talks, safety plans and state OSHA rules on US jobsites.
+- [Contracts & Commercial](https://www.alloovium.com/en/answers/topic/contracts-commercial): Variations, extensions of time, progress claims, Security of Payment and reading construction contracts for risk.
+- [Tools & Software](https://www.alloovium.com/en/answers/topic/tools-comparison): Choosing and comparing construction software for documents, safety and compliance.
+- [Subcontractor Management](https://www.alloovium.com/en/answers/topic/subcontractor-mgmt): Onboarding, prequalifying and tracking subcontractor compliance documents.
+- [Quality (QA/QC)](https://www.alloovium.com/en/answers/topic/quality-qaqc): Inspection and test plans, non-conformance reports, hold points and defect close-out.
+- [AI for Construction Documents (US)](https://www.alloovium.com/en/answers/topic/us-ai-docs): Using AI to read, draft and check pay apps, change orders, submittals and safety documents.
+- [Scheduling & Lookaheads](https://www.alloovium.com/en/answers/topic/scheduling-lookahead): Programmes, lookahead schedules, critical path and managing schedule risk.
+- [Tendering & Estimating](https://www.alloovium.com/en/answers/topic/tendering-estimating): Winning tenders, pricing, bills of quantities and reviewing tender documents.
+- [Inductions & Training](https://www.alloovium.com/en/answers/topic/inductions-training): Site inductions, White Cards, competencies and training records.
+- [RFIs & Submittals](https://www.alloovium.com/en/answers/topic/rfi-submittals): Raising, tracking and turning around requests for information and submittals.
+- [Contracts & Commercial (US)](https://www.alloovium.com/en/answers/topic/us-contracts): AIA A201, ConsensusDocs, change orders, delay claims, Davis-Bacon and certified payroll.
+- [Handover & Closeout](https://www.alloovium.com/en/answers/topic/handover-closeout): Practical completion, O&M manuals, as-builts, warranties and defects liability.
+- [Role Workflows](https://www.alloovium.com/en/answers/topic/role-workflows): Practical, role-specific ways to manage construction paperwork more efficiently.
+- [AI by Role](https://www.alloovium.com/en/answers/topic/ai-by-role): How site, project and HSEQ teams can use AI on everyday construction documents.
+- [Documents by Project Type](https://www.alloovium.com/en/answers/topic/doc-by-project-type): Which documents apply to commercial, civil, residential and other project types.
+- [Automation](https://www.alloovium.com/en/answers/topic/automation-workflows): Automating document tracking and routine paperwork on construction projects.
+- [Subcontractor Compliance by Region](https://www.alloovium.com/en/answers/topic/subcontractor-by-region): Checking trade subcontractor compliance documents by state.
+- [Environmental & Sustainability](https://www.alloovium.com/en/answers/topic/environmental): Environmental management plans, approvals, waste and sustainability reporting.
+- [Documents by State](https://www.alloovium.com/en/answers/topic/doc-by-state): State-by-state requirements for safety and project documents across Australia.
+- [Scheduling by Region](https://www.alloovium.com/en/answers/topic/scheduling-by-region): Managing construction programmes by project type and state.
+- [Tendering by Region](https://www.alloovium.com/en/answers/topic/tender-by-region): Preparing competitive tenders by project type and state.
+- [Plant & Equipment](https://www.alloovium.com/en/answers/topic/plant-equipment): Plant inspections, operator licensing, pre-starts and equipment scheduling.
+- [Role & Document Deep-Dives](https://www.alloovium.com/en/answers/topic/role-doc-deepdive): What each construction role needs to know about specific project documents.
+- [Roles by Project Type](https://www.alloovium.com/en/answers/topic/role-by-project-type): What each construction role does across different project types.
+- [Compliance by Region](https://www.alloovium.com/en/answers/topic/compliance-by-region): Compliance and safety requirements by Australian state and project type.
+- [Plant Licensing by State](https://www.alloovium.com/en/answers/topic/plant-by-state): High-risk work and plant operator licensing across Australian states.
+- [Document Templates](https://www.alloovium.com/en/answers/topic/doc-templates): Where to find and how to build construction document templates.
+- [Trades by Project Type](https://www.alloovium.com/en/answers/topic/trade-by-project-type): Managing specific trades across different construction project types.
+- [Trade Safety Documents](https://www.alloovium.com/en/answers/topic/trade-documents): Preparing SWMS, JSAs, ITPs and inductions for specific trades.
+- [Trades by State](https://www.alloovium.com/en/answers/topic/trade-by-state): Licensing and insurance requirements for trades across Australian states.
+- [Software by State](https://www.alloovium.com/en/answers/topic/tools-by-state): Choosing construction software with state-specific compliance needs in mind.
+- [Trade Documents](https://www.alloovium.com/en/answers/topic/trade-doc-detail): Safety and quality documents tailored to specific construction trades.
+
+## Sample answers
+- [Can AI answer questions across all my construction project documents?](https://www.alloovium.com/en/answers/can-ai-answer-questions-across-all-my-construction-project-documents)
+- [Can AI check a bill of quantities (BOQ) for errors before a contracts administrator submits it?](https://www.alloovium.com/en/answers/can-ai-check-a-bill-of-quantities-for-errors-before-a-contracts-administrator-submits-it)
+- [Can AI check an as-built drawing for errors before a contracts administrator submits it?](https://www.alloovium.com/en/answers/can-ai-check-an-as-built-drawing-for-errors-before-a-contracts-administrator-submits-it)
+- [Can AI cross-reference construction drawings and specifications?](https://www.alloovium.com/en/answers/can-ai-cross-reference-construction-drawings-and-specifications)
+- [Can AI generate a construction document from a template?](https://www.alloovium.com/en/answers/can-ai-generate-a-construction-document-from-a-template)
+- [Can AI help a contracts administrator draft an as-built drawing?](https://www.alloovium.com/en/answers/can-ai-help-a-contracts-administrator-draft-an-as-built-drawing)
+- [Can AI help me find clauses in a construction contract?](https://www.alloovium.com/en/answers/can-ai-help-me-find-clauses-in-a-construction-contract)
+- [Can AI read and summarise a bill of quantities (BOQ)?](https://www.alloovium.com/en/answers/can-ai-read-and-summarise-a-bill-of-quantities)
+- [Can AI read and summarise a daily site report?](https://www.alloovium.com/en/answers/can-ai-read-and-summarise-a-daily-site-report)
+- [Can AI read and summarise a defect (punch) list?](https://www.alloovium.com/en/answers/can-ai-read-and-summarise-a-defect-list)
+- [Can AI read and summarise a delay notice?](https://www.alloovium.com/en/answers/can-ai-read-and-summarise-a-delay-notice)
+- [Can AI read and summarise a hazard report?](https://www.alloovium.com/en/answers/can-ai-read-and-summarise-a-hazard-report)
+- [Can AI read and summarise a hold point?](https://www.alloovium.com/en/answers/can-ai-read-and-summarise-a-hold-point)
+- [Can AI read and summarise a Job Safety Analysis (JSA)?](https://www.alloovium.com/en/answers/can-ai-read-and-summarise-a-job-safety-analysis)
+- [Can AI read and summarise a lift plan?](https://www.alloovium.com/en/answers/can-ai-read-and-summarise-a-lift-plan)
+- [Can AI read and summarise a non-conformance report (NCR)?](https://www.alloovium.com/en/answers/can-ai-read-and-summarise-a-non-conformance-report)
+- [Can AI read and summarise a prestart checklist?](https://www.alloovium.com/en/answers/can-ai-read-and-summarise-a-prestart-checklist)
+- [Can AI read and summarise a progress claim?](https://www.alloovium.com/en/answers/can-ai-read-and-summarise-a-progress-claim)
+- [Can AI read and summarise a request for information (RFI)?](https://www.alloovium.com/en/answers/can-ai-read-and-summarise-a-request-for-information)
+- [Can AI read and summarise a Safe Work Method Statement (SWMS)?](https://www.alloovium.com/en/answers/can-ai-read-and-summarise-a-safe-work-method-statement)
+- [Can AI read and summarise a safety data sheet (SDS)?](https://www.alloovium.com/en/answers/can-ai-read-and-summarise-a-safety-data-sheet)
+- [Can AI read and summarise a scope of works?](https://www.alloovium.com/en/answers/can-ai-read-and-summarise-a-scope-of-works)
+- [Can AI read and summarise a site diary?](https://www.alloovium.com/en/answers/can-ai-read-and-summarise-a-site-diary)
+- [Can AI read and summarise a site induction?](https://www.alloovium.com/en/answers/can-ai-read-and-summarise-a-site-induction)
+- [Can AI read and summarise a specification?](https://www.alloovium.com/en/answers/can-ai-read-and-summarise-a-specification)
+- [Can a subcontractor file a lien without a written contract in Arizona?](https://www.alloovium.com/en/answers/can-a-subcontractor-file-a-lien-without-a-written-contract-in-arizona)
+- [Can a subcontractor file a lien without a written contract in California?](https://www.alloovium.com/en/answers/can-a-subcontractor-file-a-lien-without-a-written-contract-in-california)
+- [Can a subcontractor file a lien without a written contract in Colorado?](https://www.alloovium.com/en/answers/can-a-subcontractor-file-a-lien-without-a-written-contract-in-colorado)
+- [Can a subcontractor file a lien without a written contract in Florida?](https://www.alloovium.com/en/answers/can-a-subcontractor-file-a-lien-without-a-written-contract-in-florida)
+- [Can a subcontractor file a lien without a written contract in Georgia?](https://www.alloovium.com/en/answers/can-a-subcontractor-file-a-lien-without-a-written-contract-in-georgia)
+- [Can a subcontractor file a lien without a written contract in Illinois?](https://www.alloovium.com/en/answers/can-a-subcontractor-file-a-lien-without-a-written-contract-in-illinois)
+- [Can a subcontractor file a lien without a written contract in New York?](https://www.alloovium.com/en/answers/can-a-subcontractor-file-a-lien-without-a-written-contract-in-new-york)
+- [Can a subcontractor file a lien without a written contract in North Carolina?](https://www.alloovium.com/en/answers/can-a-subcontractor-file-a-lien-without-a-written-contract-in-north-carolina)
+- [Can a subcontractor file a lien without a written contract in Ohio?](https://www.alloovium.com/en/answers/can-a-subcontractor-file-a-lien-without-a-written-contract-in-ohio)
+- [Can a subcontractor file a lien without a written contract in Pennsylvania?](https://www.alloovium.com/en/answers/can-a-subcontractor-file-a-lien-without-a-written-contract-in-pennsylvania)
+- [Can a subcontractor file a lien without a written contract in Texas?](https://www.alloovium.com/en/answers/can-a-subcontractor-file-a-lien-without-a-written-contract-in-texas)
+- [Can a subcontractor file a lien without a written contract in Washington state?](https://www.alloovium.com/en/answers/can-a-subcontractor-file-a-lien-without-a-written-contract-in-washington-state)
+- [Do I need to send a preliminary notice before filing a lien in Arizona?](https://www.alloovium.com/en/answers/do-i-need-to-send-a-preliminary-notice-before-filing-a-lien-in-arizona)
+- [Do I need to send a preliminary notice before filing a lien in California?](https://www.alloovium.com/en/answers/do-i-need-to-send-a-preliminary-notice-before-filing-a-lien-in-california)
+- [Do I need to send a preliminary notice before filing a lien in Colorado?](https://www.alloovium.com/en/answers/do-i-need-to-send-a-preliminary-notice-before-filing-a-lien-in-colorado)

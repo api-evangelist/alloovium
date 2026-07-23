@@ -1,0 +1,19 @@
+generated: '2026-07-17'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.alloovium.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct 14 06:20:09 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+- host: api.alloovium.com
+  https: false
+domains:
+- domain: alloovium.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: quarantine

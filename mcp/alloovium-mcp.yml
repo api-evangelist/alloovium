@@ -1,0 +1,77 @@
+generated: '2026-07-17'
+method: searched
+status: published
+source: https://www.alloovium.com/en/developers/mcp
+server:
+  name: alloovium
+  transport: http
+  protocol: Streamable HTTP (MCP spec 2025-06-18, JSON-RPC over POST with server-sent events)
+  url: https://api.alloovium.com/api/v1/mcp/
+  authentication:
+    scheme: bearer
+    credential: 'Alloovium API key (Authorization: Bearer ak_live_YOUR_KEY)'
+    note: OAuth tokens are not accepted on the MCP transport; API key only.
+  clients:
+  - Claude Desktop
+  - Cursor
+  - Python (official mcp package, streamablehttp_client)
+notes: >-
+  15 tools total per the docs; upload, template fill, and streaming chat remain REST-only and are
+  intentionally excluded from MCP. Tool costs are billed in rate-limit tokens.
+tools:
+- name: meta_whoami
+  scope: null
+  cost: 1
+  description: Always call first — validates your API key and returns user/tenant context.
+- name: vault_list_projects
+  scope: vault:read
+  cost: 1
+  description: Cursor-paginated project listing.
+- name: vault_get_project
+  scope: vault:read
+  cost: 1
+  description: Retrieve a single project's details.
+- name: vault_create_project
+  scope: vault:write
+  cost: 2
+  description: Create a new project.
+- name: vault_list_documents
+  scope: vault:read
+  cost: 1
+  description: List documents, filter by project_id or folder_id.
+- name: vault_get_document
+  scope: vault:read
+  cost: 1
+  description: Retrieve document contents.
+- name: vault_search
+  scope: vault:read
+  cost: 5
+  description: Hybrid BM25 + vector + rerank search over the vault.
+- name: chat_ask
+  scope: chat:write + vault:read
+  cost: 10
+  description: Grounded answer with citations over project documents.
+- name: chat_list_conversations
+  scope: chat:read
+  cost: 1
+  description: List chat conversation history.
+- name: chat_get_conversation
+  scope: chat:read
+  cost: 1
+  description: Retrieve a specific conversation with its message history.
+- name: workflows_list
+  scope: workflows:read
+  cost: 1
+  description: List available workflows.
+- name: workflows_run
+  scope: workflows:write
+  cost: 25
+  description: Start a workflow run; returns run_id for polling.
+- name: workflows_get_run_status
+  scope: workflows:read
+  cost: 1
+  description: Check workflow execution status.
+- name: templates_get_fill_status
+  scope: templates:read
+  cost: 1
+  description: Monitor template-fill job completion.

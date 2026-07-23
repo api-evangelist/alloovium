@@ -1,0 +1,43 @@
+generated: '2026-07-17'
+method: searched
+source: https://www.alloovium.com/en/developers/authentication
+docs: https://www.alloovium.com/en/developers/authentication
+schemes:
+- name: OAuth2
+  version: OAuth 2.1
+  flows:
+  - flow: authorizationCode
+    pkce: S256
+    authorizationUrl: https://api.alloovium.com/api/v2/oauth/authorize
+    tokenUrl: https://api.alloovium.com/api/v2/oauth/token
+scopes:
+- scope: vault:read
+  description: List/get projects and documents, and run vault search.
+  flows: [authorizationCode]
+- scope: vault:write
+  description: Create projects and upload documents.
+  flows: [authorizationCode]
+- scope: chat:read
+  description: List conversations and fetch conversation history.
+  flows: [authorizationCode]
+- scope: chat:write
+  description: Ask chat (streaming and non-streaming).
+  flows: [authorizationCode]
+- scope: templates:read
+  description: Poll template-fill job status.
+  flows: [authorizationCode]
+- scope: templates:write
+  description: Start template-fill jobs.
+  flows: [authorizationCode]
+- scope: workflows:read
+  description: List workflows and get run status.
+  flows: [authorizationCode]
+- scope: workflows:write
+  description: Start workflow runs.
+  flows: [authorizationCode]
+- scope: meta:read
+  description: Reserved; not currently required.
+  flows: [authorizationCode]
+notes: >-
+  Dynamically registered OAuth clients are always issued read-only scopes. API keys created in the
+  Developer Console carry their own scope grant independent of OAuth.

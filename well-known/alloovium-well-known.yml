@@ -1,0 +1,20 @@
+generated: '2026-07-17'
+method: searched
+host: https://www.alloovium.com
+documents:
+- {path: /.well-known/security.txt, status: 404}
+- {path: /.well-known/openid-configuration, status: 404}
+- {path: /.well-known/oauth-authorization-server, status: 404}
+- {path: /.well-known/api-catalog, status: 404}
+- {path: /.well-known/ai-plugin.json, status: 404}
+- {path: /llms.txt, status: 200, file: ../llms/alloovium-llms.txt}
+- {path: /llms-full.txt, status: 200, note: not saved (gitignored *-llms-full.txt; embeds example tokens)}
+- {path: /sitemap.xml, status: 200}
+api_host_note: >-
+  The OAuth discovery documents (oauth-authorization-server / openid-configuration) would live on the API
+  host api.alloovium.com, which did not resolve from the enrichment environment, so those endpoints could
+  not be probed. OAuth endpoints are documented at https://api.alloovium.com/api/v2/oauth/* — see
+  authentication/alloovium-authentication.yml.
+notes: >-
+  No /.well-known/ discovery documents are published on the marketing/docs host. Absence recorded as valid
+  data; no WellKnown/SecurityTxt pointer is emitted because nothing returned 200.

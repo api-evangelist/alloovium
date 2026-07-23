@@ -1,0 +1,45 @@
+generated: '2026-07-17'
+method: searched
+source: https://www.alloovium.com/en/docs/changelog
+docs: https://www.alloovium.com/en/docs/changelog
+scheme: dated release windows (customer-visible product changes)
+current_focus: One consolidated product — Routines, Portal, and Conformance
+entries:
+- window: April–July 2026
+  type: major
+  title: 'One product: Routines, Portal, and Conformance'
+  highlights:
+  - Consolidated into a single product; Exchange and Compliance folded in as capability areas.
+  - Renamed Workflows to Routines (review-gated trigger/action/logic block chains).
+  - Expanded construction integrations (Procore, Autodesk APS, Aconex, Asite, Newforma, ProjectWise, Trimble Connect, Bluebeam, Fieldwire) via a self-hosted Nango.
+  - Introduced Action Items that turn a site update or meeting into a pre-filled variation or RFI draft.
+- window: April 9, 2026
+  type: major
+  title: Docs, Developer Access, and Review Workflow Control
+  highlights:
+  - Refreshed docs with a full guide, API reference, developer portal, and rebuilt changelog.
+  - Expanded public developer access around API keys, MCP, capability docs, and integration guidance.
+  - Upgraded the workflow library with filters, favourites, pins, run controls, and draft persistence.
+- window: April 7-8, 2026
+  type: major
+  title: Notifications, Scheduling, and Customer-Facing Automation
+  highlights:
+  - Shipped scheduled workflows with calendar preview, timezone support, and delivery notifications.
+  - Introduced a notification center and stronger email notification coverage.
+- window: April 5-6, 2026
+  type: major
+  title: Workflow Studio, Monthly Reports, and Management Plans
+  highlights:
+  - Launched natural-language workflow creation.
+  - Upgraded Monthly Report Fill; shipped Management Plan generation end to end.
+- window: April 1-3, 2026
+  type: major
+  title: Compliance Wizard, AI Brain, and Onboarding Overhaul
+  highlights:
+  - Launched the ISO 9001 Gap Register and Compliance Wizard (guided evidence/clause review, fix-gaps, packaging).
+  - Turned AI Brain and Timeline into visible product surfaces.
+- window: March 29-31, 2026
+  type: major
+  title: Decision Intelligence and AI Brain
+  highlights:
+  - Built AI Brain into a dedicated intelligence workspace for memories, entities, and patterns.

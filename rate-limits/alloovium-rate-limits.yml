@@ -1,0 +1,28 @@
+generated: '2026-07-17'
+method: searched
+source: https://www.alloovium.com/en/developers/rate-limits
+model: token-bucket, tier-based
+tiers:
+- {tier: Free, tokens_per_minute: 10, burst_capacity: 20}
+- {tier: Standard, tokens_per_minute: 60, burst_capacity: 120}
+- {tier: Pro, tokens_per_minute: 300, burst_capacity: 600}
+- {tier: Enterprise, tokens_per_minute: 1500, burst_capacity: 3000}
+headers:
+- {name: X-RateLimit-Limit, description: Maximum burst capacity}
+- {name: X-RateLimit-Remaining, description: Tokens available after the call}
+- {name: X-RateLimit-Reset, description: Unix timestamp for full bucket restoration}
+- {name: X-RateLimit-Cost, description: Tokens deducted by this request}
+- {name: Retry-After, description: Seconds to wait before retrying (429 only)}
+throttled_response:
+  status: 429
+  code: rate_limited
+  body:
+    type: https://api.alloovium.com/errors/rate_limited
+    title: Rate limit exceeded
+    status: 429
+    code: rate_limited
+    retry_after_seconds: 12
+retry_strategy: On 429, sleep for Retry-After seconds and retry, using an Idempotency-Key to avoid duplicate execution.
+notes: >-
+  Individual operations cost a variable number of tokens (e.g. vault_search 5, chat_ask 10,
+  workflows_run 25) — see mcp/alloovium-mcp.yml for per-tool costs.

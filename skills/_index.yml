@@ -1,0 +1,19 @@
+generated: '2026-07-17'
+method: generated
+source: https://www.alloovium.com/en/developers
+note: >-
+  Skills are grounded in Alloovium's documented REST v2 operations and MCP tool names (no OpenAPI file was
+  captured; operations verified against the published developer/capability docs, not invented).
+skills:
+- file: alloovium-ask-project-documents.md
+  name: Ask a cited question across a construction project
+  api: https://www.alloovium.com/en/developers
+  operations: [meta_whoami, vault_list_projects, vault_search, chat_ask]
+- file: alloovium-create-project-and-add-documents.md
+  name: Create a project and add documents
+  api: https://www.alloovium.com/en/developers
+  operations: [meta_whoami, vault_create_project, vault_list_documents, vault_get_document]
+- file: alloovium-run-workflow.md
+  name: Run a workflow (Routine) and poll for the result
+  api: https://www.alloovium.com/en/developers
+  operations: [meta_whoami, workflows_list, workflows_run, workflows_get_run_status]

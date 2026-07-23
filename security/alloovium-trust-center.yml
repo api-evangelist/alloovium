@@ -1,0 +1,22 @@
+generated: '2026-07-17'
+method: searched
+probe: false
+url: https://www.alloovium.com/en/security
+compliance_manager: Vanta
+certifications:
+- {name: SOC 2 Type I, status: in-progress}
+- {name: ISO 27001, status: in-progress}
+encryption:
+  at_rest: Documents in AWS S3 with KMS encryption; PostgreSQL via RDS encryption.
+  in_transit: TLS 1.2 or higher enforced on all connections.
+  enterprise: BYOK (Bring Your Own Key) available.
+data_residency:
+  primary: AWS ap-southeast-2 (Sydney, Australia)
+  note: Document storage and databases remain in-region.
+security_scanning: Dependabot enabled; zero security incidents reported to date.
+security_contact: zander@alloovium.com
+evidence:
+- {source: https://www.alloovium.com/en/security, keywords: [soc 2, iso 27001, vanta, kms, tls, byok, data residency]}
+notes: >-
+  Named certifications are recorded as in-progress (not yet achieved), managed via Vanta. Reported honestly;
+  no Compliance pointer is emitted since no certification is completed as of this pass.
