@@ -15,8 +15,7 @@ server:
   - Claude Desktop
   - Cursor
   - Python (official mcp package, streamablehttp_client)
-notes: >-
-  15 tools total per the docs; upload, template fill, and streaming chat remain REST-only and are
+notes: 15 tools total per the docs; upload, template fill, and streaming chat remain REST-only and are
   intentionally excluded from MCP. Tool costs are billed in rate-limit tokens.
 tools:
 - name: meta_whoami
@@ -75,3 +74,12 @@ tools:
   scope: templates:read
   cost: 1
   description: Monitor template-fill job completion.
+deployment:
+  mode: none
+  endpoint: https://api.alloovium.com/api/v1/mcp/
+  verified: probed
+  probe: dead
+  note: the endpoint this manifest claimed did not answer; recorded as none rather than deleted so the
+    claim stays auditable
+  checked: '2026-08-12'
+  source: catalog MCP census
