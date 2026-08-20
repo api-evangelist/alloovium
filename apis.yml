@@ -48,6 +48,10 @@ apis:
   tags:
   - Document Intelligence
   - Construction
+  - Artificial Intelligence
+  tags_raw:
+  - Document Intelligence
+  - Construction
   - AI
   description: Alloovium's public REST API v2 for document intelligence over construction projects — vault
     (projects, documents, hybrid search), chat (grounded, cited answers), workflows (automation runs), and
