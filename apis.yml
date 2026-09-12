@@ -104,6 +104,8 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: Website
+  url: https://www.alloovium.com/
 - type: DeveloperPortal
   url: https://www.alloovium.com/en/developers
 - type: Documentation
