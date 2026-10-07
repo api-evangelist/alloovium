@@ -104,6 +104,8 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: Plans
+  url: plans/alloovium-plans-pricing.yml
 - url: https://www.alloovium.com/en/blogs
   type: Blog
 - type: Website
