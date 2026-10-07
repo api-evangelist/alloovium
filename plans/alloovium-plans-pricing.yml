@@ -1,0 +1,34 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://www.alloovium.com/en/pricing
+sources:
+- https://www.alloovium.com/en/pricing
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T104522
+  grounding: every price_text was found verbatim in the fetched page text
+audience: business-product
+pricing_basis: negotiated
+delivery:
+  delivery: managed
+  method: page
+  read: '2026-10-07'
+published: false
+note: No numeric price is published on the pricing page; Pricing page shows three tiers (Pilot, Organisation,
+  Enterprise) with no numeric prices; states licensing is organisation-based, not per-token, and directs
+  users to book a demo for a proposal.
+plan_count: 3
+plans:
+- name: Pilot
+  price_text: Book a demo
+  period: none
+  included_quota: Included for all four listed value items
+- name: Organisation
+  price_text: Book a demo
+  period: none
+  included_quota: Included for all four listed value items
+- name: Enterprise
+  price_text: Book a demo
+  period: none
+  included_quota: Included for all four listed value items
